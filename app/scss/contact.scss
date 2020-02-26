@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import 'responsive';
+
+#contact {
+	padding: 7.14vw 10vw 7.14vw 10vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#contact-1 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#contact-title {
+	font-size: 2.6vw;
+	color: #212121;
+	font-family: "Raleway", sans-serif;
+	font-weight: 400;
+	margin: 0;
+}
+
+#contact-divider {
+	background: #FF8B38;
+	width: 4.5vw;
+	height: 2px;
+}
+
+#contact-description {
+	font-size: 1vw;
+	color: #86878b;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	margin-top: 0;
+}
+
+#contact-2 {
+	margin-top: 5vw;
+	width: 80vw;
+	height: 11.43vw;
+	display: flex;
+	justify-content: space-between;
+
+	input, textarea {
+		border-style: none;
+		border-bottom: 1px solid rgba(0,0,1,0.16);
+		font-size: 1vw;
+		&::placeholder {
+			color: #BDBDBD;
+		}
+		font-family: "Open Sans", sans-serif;
+		font-weight: 400;
+		outline: 0;
+	}
+}
+
+#contact-2-1 {
+	width: 35vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#contact-2-2 {
+	width: 35vw;
+	textarea {
+		resize: none;
+		height: 100%;
+		width: 100%;
+		padding: 0;
+	}
+}
+
+#contact-send {
+	width: 10.43vw;
+	height: 3.14vw;
+	margin-top: 3vw;
+	font-size: 1.07vw;
+	font-family: "Open Sans", sans-serif; 
+	background-color: #FF8B38;
+	font-weight: 600;
+	border-style: none;
+	border-radius: 0.22vw;
+	filter: drop-shadow(0px 1px 0px rgba(0, 0, 0, 0.2));
+	color: white;
+	outline: 0;
+	cursor: pointer;
+
+	&:hover, &:active {
+		background-color: #FFA653;
+	}
+	transition: 0.2s;
+}

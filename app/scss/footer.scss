@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import 'responsive';
+
+footer {
+	background-color: black;
+	padding: 1.43vw 0 1vw 0;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#footer-icons {
+	font-size: 1.714vw;
+	display: flex;
+	justify-content: space-between;
+
+	i {
+		margin: 0 1vw;
+		color: #CCCCCC;
+		transition: 0.2s;
+		&:hover, &:active {
+			color: white;
+		}
+	}
+}
+
+#footer-text {
+	font-size: 0.86vw;
+	color: white;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	opacity: 0.5;
+	margin: 0.86vw 0 0 0;
+}

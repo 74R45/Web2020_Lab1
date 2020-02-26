@@ -1,0 +1,1009 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+#navbar {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  background: black;
+  height: 72px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center; }
+
+#navbar-content {
+  padding: 0 10vw;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; }
+
+#navbar-logo {
+  height: 27px; }
+
+#navbar-links {
+  display: flex;
+  align-items: center; }
+  #navbar-links a {
+    margin-left: 3.3vw; }
+  @media (max-width: 799px) {
+    #navbar-links a {
+      display: none; }
+    #navbar-links a.navbar-hamburger {
+      display: block; } }
+
+.navbar-hamburger {
+  display: none; }
+
+a[class|="navbar-link"], .navbar-hamburger {
+  font-size: 14px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  font-weight: 600;
+  opacity: 0.69;
+  transition: 0.2s; }
+  a[class|="navbar-link"]:hover, a[class|="navbar-link"]:active, .navbar-hamburger:hover, .navbar-hamburger:active {
+    opacity: 1; }
+
+#navbar-mobile {
+  height: 0px;
+  width: 230px;
+  position: absolute;
+  z-index: 2;
+  top: 72px;
+  right: 10px;
+  background: black;
+  overflow-y: hidden;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly; }
+  @media (min-width: 800px) {
+    #navbar-mobile {
+      display: none; } }
+
+#navbar-mobile a {
+  position: relative;
+  font-size: 20px;
+  padding: 0; }
+
+#header-wrapper {
+  position: relative;
+  background-color: black;
+  overflow: hidden; }
+
+#header-image {
+  opacity: 0.522;
+  margin-top: -1.6vw;
+  margin-bottom: -12.7vw; }
+  @media (min-width: 800px) {
+    #header-image {
+      width: 100%; } }
+  @media (max-width: 799px) {
+    #header-image {
+      position: absolute;
+      height: 110%; } }
+  @media (max-width: 599px) {
+    #header-image {
+      left: -50%; } }
+
+#header-content {
+  width: 80%;
+  position: absolute;
+  top: 72px;
+  bottom: 0;
+  margin: 0 10vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  @media (max-width: 799px) {
+    #header-content {
+      position: initial;
+      flex-direction: column;
+      padding-top: 5vw;
+      padding-bottom: 5vw;
+      margin-top: 72px; } }
+
+#header-text {
+  width: 37vw;
+  display: flex;
+  z-index: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center; }
+  @media (max-width: 799px) {
+    #header-text {
+      width: 100%;
+      margin-bottom: 5vw; } }
+  @media (max-width: 599px) {
+    #header-text {
+      margin-bottom: 7.5vw; } }
+
+#header-logo {
+  width: 12.14vw;
+  margin-bottom: 2.36vw; }
+  @media (max-width: 799px) {
+    #header-logo {
+      width: 18.21vw; } }
+  @media (max-width: 599px) {
+    #header-logo {
+      width: 36vw; } }
+
+#header-description1 {
+  color: white;
+  font-size: 2.57vw;
+  font-family: "Raleway", sans-serif;
+  margin: 0; }
+  @media (max-width: 799px) {
+    #header-description1 {
+      font-size: 4vw; } }
+  @media (max-width: 599px) {
+    #header-description1 {
+      font-size: 5vw; } }
+
+#header-divider {
+  background: white;
+  width: 5vw;
+  height: 2px;
+  margin: 2.85vw 0; }
+  @media (max-width: 799px) {
+    #header-divider {
+      width: 6.75vw; } }
+  @media (max-width: 599px) {
+    #header-divider {
+      width: 12vw; } }
+
+#header-description2 {
+  color: white;
+  font-size: 1.15vw;
+  font-family: "Raleway", sans-serif;
+  margin: 0 0 2.85vw 0;
+  opacity: 0.8; }
+  @media (max-width: 799px) {
+    #header-description2 {
+      font-size: 2vw; } }
+  @media (max-width: 599px) {
+    #header-description2 {
+      font-size: 3vw; } }
+
+#header-download {
+  width: 9.71vw;
+  height: 3vw;
+  font-size: 1.07vw;
+  font-family: "Open Sans", sans-serif;
+  background-color: rgba(0, 0, 0, 0);
+  border-style: solid;
+  color: white;
+  outline: 0;
+  cursor: pointer;
+  transition: 0.2s; }
+  #header-download:hover, #header-download:active {
+    background-color: #FF8B38; }
+  @media (max-width: 799px) {
+    #header-download {
+      width: 14.565vw;
+      height: 4.5vw;
+      font-size: 1.605vw; } }
+  @media (max-width: 599px) {
+    #header-download {
+      width: 30vw;
+      height: 9vw;
+      font-size: 3vw; } }
+
+#header-signup {
+  width: 25.7vw;
+  height: 25.7vw;
+  background: white;
+  border-radius: 0.5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2; }
+  @media (max-width: 799px) {
+    #header-signup {
+      width: 60vw;
+      height: 60vw;
+      border-radius: 1vw; } }
+  @media (max-width: 599px) {
+    #header-signup {
+      width: 80vw;
+      height: 80vw;
+      border-radius: 2vw; } }
+
+#signup-title-wrapper {
+  width: 100%;
+  height: 15.2%;
+  background-color: #F5F5F5;
+  border-radius: 0.5vw 0.5vw 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  @media (max-width: 799px) {
+    #signup-title-wrapper {
+      border-radius: 1vw 1vw 0 0; } }
+  @media (max-width: 599px) {
+    #signup-title-wrapper {
+      border-radius: 2vw 2vw 0 0; } }
+
+#signup-title {
+  font-size: 1.42vw;
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+  font-weight: 700;
+  margin: 0; }
+  @media (max-width: 799px) {
+    #signup-title {
+      font-size: 2.84vw; } }
+  @media (max-width: 599px) {
+    #signup-title {
+      font-size: 3.6vw; } }
+
+.orange {
+  color: #FF8B38; }
+
+#header-signup input {
+  width: 79%;
+  padding: 5px;
+  border-style: none;
+  border-bottom: 1px solid rgba(0, 0, 1, 0.16);
+  font-size: 1vw;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  outline: 0; }
+  #header-signup input::placeholder {
+    color: #BDBDBD; }
+  @media (max-width: 799px) {
+    #header-signup input {
+      font-size: 2vw; } }
+  @media (max-width: 599px) {
+    #header-signup input {
+      font-size: 3vw; } }
+
+#signup-button {
+  width: 100%;
+  height: 15.2%;
+  background-color: #FF8B38;
+  border-radius: 0 0 0.5vw 0.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.2s; }
+  #signup-button:hover, #signup-button:active {
+    background-color: #FFA653; }
+  @media (max-width: 799px) {
+    #signup-button {
+      border-radius: 0 0 1vw 1vw; } }
+  @media (max-width: 599px) {
+    #signup-button {
+      border-radius: 0 0 2vw 2vw; } }
+
+#signup-button-text {
+  font-size: 1.07vw;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  margin: 0; }
+  @media (max-width: 799px) {
+    #signup-button-text {
+      font-size: 2.14vw; } }
+  @media (max-width: 599px) {
+    #signup-button-text {
+      font-size: 3vw; } }
+
+#social-media-wrapper {
+  filter: drop-shadow(0px 1px 1.5px rgba(0, 0, 0, 0.38));
+  overflow: hidden; }
+
+#social-media {
+  width: 80%;
+  height: 7.5vw;
+  padding: 0 10vw;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+#social-media-text {
+  width: 26vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+#social-media-title {
+  font-size: 1.42vw;
+  color: #333333;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 0.25vw; }
+
+#social-media-description {
+  font-size: 1vw;
+  color: #86878b;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  margin: 0; }
+
+#social-media-icons {
+  width: 45.36vw;
+  font-size: 3.43vw;
+  display: flex;
+  justify-content: space-between; }
+  #social-media-icons i {
+    color: #CCCCCC;
+    transition: 0.2s; }
+    #social-media-icons i:hover, #social-media-icons i:active {
+      color: #999999; }
+
+#features1 {
+  padding: 10vw 10vw 7.14vw 10vw;
+  display: flex;
+  justify-content: space-between;
+  background-color: #F5F5F5; }
+
+.feature-tab {
+  width: 8vw;
+  height: 8vw;
+  background: #333333;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.07vw;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s; }
+  .feature-tab:hover {
+    background-color: #DF6B18; }
+  .feature-tab:active, .feature-tab.active {
+    background-color: #FF8B38; }
+
+#feature-tab1 {
+  border-radius: 0.36vw 0.36vw 0 0; }
+
+#feature-tab2 {
+  border-top: 1px #F5F5F5 solid;
+  border-bottom: 1px #F5F5F5 solid; }
+
+#feature-tab3 {
+  border-radius: 0 0 0.36vw 0.36vw;
+  filter: drop-shadow(0px 1px 0px rgba(0, 0, 0, 0.2)); }
+
+#features-contents {
+  width: 40%;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 0.3vw; }
+
+.features1-text {
+  position: absolute;
+  width: 31.5vw;
+  display: flex;
+  opacity: 1;
+  transition: opacity linear 0.15s;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start; }
+
+.features1-title {
+  font-size: 1.43vw;
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  margin-top: 0; }
+
+.features1-description {
+  font-size: 1vw;
+  color: #86878b;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400; }
+
+.feature-download {
+  width: 8.5vw;
+  height: 3.14vw;
+  margin: 1.43vw 0;
+  font-size: 1.07vw;
+  font-family: "Open Sans", sans-serif;
+  background-color: #FF8B38;
+  font-weight: 600;
+  border-style: none;
+  border-radius: 0.22vw;
+  filter: drop-shadow(0px 1px 0px rgba(0, 0, 0, 0.2));
+  color: white;
+  outline: 0;
+  cursor: pointer;
+  transition: 0.2s; }
+  .feature-download:hover, .feature-download:active {
+    background-color: #FFA653; }
+
+#features1-image {
+  display: flex;
+  align-items: center; }
+
+#features-image1 {
+  width: 22.86vw;
+  height: auto; }
+
+#features2 {
+  padding: 7.86vw 10vw 7.14vw 10vw;
+  display: flex;
+  justify-content: space-between; }
+
+#features2-image {
+  width: 45%;
+  display: flex;
+  align-items: center; }
+
+#features-image2 {
+  margin-left: -1.5vw;
+  width: 100%;
+  height: auto; }
+
+#features2-text {
+  width: 43%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+  #features2-text ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0; }
+    #features2-text ul i {
+      color: #FF8B38;
+      display: inline-block;
+      border-radius: 4.29vw;
+      border: 0.143vw solid #FF8B38;
+      padding: 0.643vw;
+      margin-top: 1.05vw;
+      margin-right: 1.75vw; }
+
+#features2-title {
+  font-size: 1.43vw;
+  color: #212121;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  margin: 0.72vw 0; }
+
+#features2-divider {
+  background: #FF8B38;
+  width: 4.5vw;
+  height: 2px;
+  margin: 0.72vw 0; }
+
+#features2-description {
+  font-size: 1vw;
+  color: #86878b;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  margin: 0.72vw 0; }
+
+.features2-list-container {
+  display: flex;
+  align-items: flex-start; }
+
+.features2-list-title {
+  font-size: 1vw;
+  color: #212121;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600; }
+
+.features2-list-text {
+  font-size: 1vw;
+  color: #86878b;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400; }
+
+#features3 {
+  padding: 7.86vw 10vw 7.14vw 10vw;
+  display: flex;
+  justify-content: space-between;
+  background-color: #F5F5F5; }
+
+#features3-text {
+  width: 33.8vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 1vw; }
+
+#features3-title {
+  font-size: 1.43vw;
+  color: #212121;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  margin: 0.72vw 0; }
+
+#features3-divider {
+  background: #FF8B38;
+  width: 4.5vw;
+  height: 2px;
+  margin: 0.72vw 0; }
+
+#features3-description {
+  font-size: 1vw;
+  color: #86878b;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  margin: 0.72vw 0; }
+
+#features3-image {
+  width: 45%; }
+
+#features-image3 {
+  width: 100%;
+  height: auto; }
+
+#about {
+  padding: 7.14vw 10vw 7.14vw 10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; }
+
+#about-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+#about-title {
+  font-size: 2.6vw;
+  color: #212121;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  margin: 0; }
+
+#about-divider {
+  background: #FF8B38;
+  width: 4.5vw;
+  height: 2px; }
+
+#about-description {
+  font-size: 1vw;
+  color: #86878b;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  margin-top: 0; }
+
+#about-2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3.2vw; }
+
+.about-2-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 30%; }
+  .about-2-container i {
+    width: 1.78vw;
+    font-size: 1.78vw;
+    color: #FF8B38;
+    display: inline-block;
+    border-radius: 4.25vw;
+    border: 0.15vw solid #FF8B38;
+    padding: 0.86vw;
+    text-align: center; }
+
+.about-subtitle {
+  font-size: 1.43vw;
+  color: #333333;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700; }
+
+.about-subtext {
+  font-size: 1vw;
+  color: #86878b;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  text-align: center; }
+
+#pricing {
+  padding: 5.7vw 10vw 5.7vw 10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F5F5F5; }
+
+#pricing-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+#pricing-title {
+  font-size: 2.6vw;
+  color: #212121;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  margin: 0; }
+
+#pricing-divider {
+  background: #FF8B38;
+  width: 4.5vw;
+  height: 2px; }
+
+#pricing-text {
+  font-size: 1vw;
+  color: #86878b;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  margin-top: 0; }
+
+#pricing-2 {
+  width: 100%;
+  margin-top: 3.2vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; }
+
+.pricing-2-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  width: 32%; }
+
+.pricing-name-container {
+  width: 100%;
+  height: 4.21vw;
+  background-color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid white; }
+
+.pricing-name {
+  font-size: 1.43vw;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700; }
+
+.pricing-price-container {
+  width: 100%;
+  height: 10.71vw;
+  background-color: #333333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; }
+
+.pricing-price {
+  font-size: 2.5vw;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  margin: 0;
+  margin-top: -0.6vw; }
+  .pricing-price span {
+    font-size: 7vw;
+    text-shadow: 0px 0.1vw, 0.1vw 0px, 0.1vw 0.1vw; }
+
+.pricing-description {
+  font-size: 1vw;
+  color: white;
+  opacity: 0.5;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  margin-top: 0; }
+
+.pricing-orange-small {
+  width: 100%;
+  height: 5px;
+  background-color: #FF8B38; }
+
+.pricing-orange-big {
+  width: 100%;
+  height: 2.85vw;
+  background-color: #FF8B38;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.pricing-orange-text {
+  font-size: 1vw;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700; }
+
+.pricing-detail-container {
+  width: 100%;
+  height: 2.93vw;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #F5F5F5; }
+
+.pricing-detail {
+  font-size: 1vw;
+  color: #86878b;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400; }
+
+#reviews {
+  padding: 7.14vw 10vw 7.14vw 10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; }
+
+#reviews-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+#reviews-title {
+  font-size: 2.6vw;
+  color: #212121;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  margin: 0; }
+
+#reviews-divider {
+  background: #FF8B38;
+  width: 4.5vw;
+  height: 2px; }
+
+#reviews-description {
+  font-size: 1vw;
+  color: #86878b;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  margin-top: 0; }
+
+#reviews-2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3.2vw; }
+
+.reviews-2-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 26%; }
+
+.reviews-2-speechbox {
+  position: relative;
+  background-color: #F5F5F5;
+  border-radius: 0.22vw;
+  padding: 0.5vw 1vw; }
+  .reviews-2-speechbox:after {
+    width: 0;
+    height: 0;
+    content: '';
+    position: absolute;
+    bottom: -1vw;
+    border-style: solid;
+    border-width: 2vw 1.2vw 0 1.2vw;
+    border-color: #F5F5F5 transparent transparent transparent;
+    left: 0;
+    margin-left: 1.35vw; }
+
+.reviews-2-speechtext {
+  font-size: 1vw;
+  color: #86878B;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic; }
+
+.reviews-2-customer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-top: 1.5vw; }
+  .reviews-2-customer img {
+    width: 5vw; }
+
+.reviews-2-name-container {
+  height: 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1vw; }
+
+.reviews-2-name {
+  font-size: 1.43vw;
+  color: #333333;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 0.1vw; }
+
+.reviews-2-job {
+  font-size: 1vw;
+  color: #86878b;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  margin: 0; }
+
+#download {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: black;
+  height: 22.86vw;
+  overflow: hidden; }
+
+#download-image {
+  opacity: 0.4;
+  height: 100%; }
+
+#download-container {
+  position: absolute;
+  width: 80vw;
+  height: 14.51vw;
+  padding: 3.57vw 10vw 4.78vw 10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; }
+
+#download-title {
+  font-size: 2.6vw;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  margin: 0; }
+
+#download-divider {
+  background: white;
+  width: 4.5vw;
+  min-height: 1px;
+  height: 2px; }
+
+#download-description {
+  font-size: 1.14vw;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  margin-top: 0;
+  opacity: 0.8; }
+
+#download-button {
+  width: 9.71vw;
+  height: 3vw;
+  font-size: 1.07vw;
+  font-family: "Open Sans", sans-serif;
+  background-color: rgba(0, 0, 0, 0);
+  border-style: solid;
+  color: white;
+  outline: 0;
+  cursor: pointer;
+  transition: 0.2s; }
+  #download-button:hover, #download-button:active {
+    background-color: #FF8B38; }
+
+#contact {
+  padding: 7.14vw 10vw 7.14vw 10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; }
+
+#contact-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+#contact-title {
+  font-size: 2.6vw;
+  color: #212121;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  margin: 0; }
+
+#contact-divider {
+  background: #FF8B38;
+  width: 4.5vw;
+  height: 2px; }
+
+#contact-description {
+  font-size: 1vw;
+  color: #86878b;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  margin-top: 0; }
+
+#contact-2 {
+  margin-top: 5vw;
+  width: 80vw;
+  height: 11.43vw;
+  display: flex;
+  justify-content: space-between; }
+  #contact-2 input, #contact-2 textarea {
+    border-style: none;
+    border-bottom: 1px solid rgba(0, 0, 1, 0.16);
+    font-size: 1vw;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    outline: 0; }
+    #contact-2 input::placeholder, #contact-2 textarea::placeholder {
+      color: #BDBDBD; }
+
+#contact-2-1 {
+  width: 35vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+#contact-2-2 {
+  width: 35vw; }
+  #contact-2-2 textarea {
+    resize: none;
+    height: 100%;
+    width: 100%;
+    padding: 0; }
+
+#contact-send {
+  width: 10.43vw;
+  height: 3.14vw;
+  margin-top: 3vw;
+  font-size: 1.07vw;
+  font-family: "Open Sans", sans-serif;
+  background-color: #FF8B38;
+  font-weight: 600;
+  border-style: none;
+  border-radius: 0.22vw;
+  filter: drop-shadow(0px 1px 0px rgba(0, 0, 0, 0.2));
+  color: white;
+  outline: 0;
+  cursor: pointer;
+  transition: 0.2s; }
+  #contact-send:hover, #contact-send:active {
+    background-color: #FFA653; }
+
+footer {
+  background-color: black;
+  padding: 1.43vw 0 1vw 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between; }
+
+#footer-icons {
+  font-size: 1.714vw;
+  display: flex;
+  justify-content: space-between; }
+  #footer-icons i {
+    margin: 0 1vw;
+    color: #CCCCCC;
+    transition: 0.2s; }
+    #footer-icons i:hover, #footer-icons i:active {
+      color: white; }
+
+#footer-text {
+  font-size: 0.86vw;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  opacity: 0.5;
+  margin: 0.86vw 0 0 0; }
+
+body {
+  margin: 0; }
+
+html {
+  scroll-behavior: smooth;
+  transition-duration: 0.5s; }
+  @media screen and (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto; } }

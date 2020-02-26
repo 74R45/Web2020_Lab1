@@ -1,0 +1,22 @@
+@import 'navbar';
+@import 'header';
+@import 'features';
+@import 'about';
+@import 'pricing';
+@import 'reviews';
+@import 'download';
+@import 'contact';
+@import 'footer';
+
+body {
+	margin: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+	transition-duration: 0.5s;
+
+	@media screen and (prefers-reduced-motion: reduce) {
+		scroll-behavior: auto;
+	}
+}

@@ -1,0 +1,25 @@
+{
+  "name": "web2020_lab1",
+  "version": "1.0.0",
+  "description": "Lab #1 for Web-Oriented Systems 2020",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/74R45/Web2020_Lab1.git"
+  },
+  "author": "Taras Kreshchenko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/74R45/Web2020_Lab1/issues"
+  },
+  "homepage": "https://github.com/74R45/Web2020_Lab1#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-useref": "^4.0.1"
+  }
+}

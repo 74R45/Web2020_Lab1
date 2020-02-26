@@ -1,0 +1,88 @@
+$navbar_height: 72px;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import 'responsive';
+
+#navbar {
+	position: absolute;
+	z-index: 2;
+	width: 100%;
+	background: black;
+	height: $navbar_height;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+}
+
+#navbar-content {
+	padding: 0 10vw;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+#navbar-logo {
+	height: 27px;
+}
+
+#navbar-links {
+	display: flex;
+	align-items: center;
+
+	a {
+		margin-left: 3.3vw;
+	}
+
+	@include tablet-down {
+		a {
+			display: none;
+		}
+		a.navbar-hamburger {
+			display: block;
+		}
+	}
+}
+
+.navbar-hamburger {
+	display: none;
+}
+
+a[class|="navbar-link"], .navbar-hamburger {
+	font-size: 14px;
+	color: white;
+	font-family: "Open Sans", sans-serif;
+	text-decoration: none;
+	font-weight: 600;
+	opacity: 0.69;
+
+	&:hover, &:active {
+		opacity: 1;
+	}
+	transition: 0.2s;
+}
+
+#navbar-mobile {
+	height: 0px;
+	width: 230px;
+	position: absolute;
+	z-index: 2;
+	top: $navbar_height;
+	right: 10px;
+	background: black;
+	overflow-y: hidden;
+	transition: 0.3s;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+
+	@include tablet-up {
+		display: none;
+	}
+}
+
+#navbar-mobile a {
+	position: relative;
+	font-size: 20px;
+	padding: 0;
+}

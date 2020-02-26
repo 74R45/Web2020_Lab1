@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import 'responsive';
+
+#reviews {
+	padding: 7.14vw 10vw 7.14vw 10vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#reviews-1 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#reviews-title {
+	font-size: 2.6vw;
+	color: #212121;
+	font-family: "Raleway", sans-serif;
+	font-weight: 400;
+	margin: 0;
+}
+
+#reviews-divider {
+	background: #FF8B38;
+	width: 4.5vw;
+	height: 2px;
+}
+
+#reviews-description {
+	font-size: 1vw;
+	color: #86878b;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	margin-top: 0;
+}
+
+#reviews-2 {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 3.2vw;
+}
+
+.reviews-2-container {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	max-width: 26%;
+}
+
+.reviews-2-speechbox {
+	position: relative;
+	background-color: #F5F5F5;
+	border-radius: 0.22vw;
+	padding: 0.5vw 1vw;
+
+	&:after {
+		width: 0;
+		height: 0;
+		content: '';
+		position: absolute;
+		bottom: -1vw;
+		border-style: solid;
+		border-width: 2vw 1.2vw 0 1.2vw;
+		border-color: #F5F5F5 transparent transparent transparent;
+		left: 0;
+		margin-left: 1.35vw;
+
+	}
+}
+
+.reviews-2-speechtext {
+	font-size: 1vw;
+	color: #86878B;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.reviews-2-customer {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+	margin-top: 1.5vw;
+
+	img {
+		width: 5vw;
+	}
+}
+
+.reviews-2-name-container {
+	height: 5vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 1vw;
+}
+
+.reviews-2-name {
+	font-size: 1.43vw;
+	color: #333333;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 700;
+	margin: 0;
+	margin-bottom: 0.1vw;
+}
+
+.reviews-2-job {
+	font-size: 1vw;
+	color: #86878b;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	margin: 0;
+}

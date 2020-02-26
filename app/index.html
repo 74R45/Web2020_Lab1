@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AXIT - Homepage</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+	<!-- Navbar -->
+	<div id="navbar">
+		<div id="navbar-content">
+			<img src="images/navbar-logo.png" id="navbar-logo">
+			<div id="navbar-links" class="navbar-links">
+				<a href="#features" class="navbar-link">Features</a>
+				<a href="#about" class="navbar-link">About</a>
+				<a href="#pricing" class="navbar-link">Pricing</a>
+				<a href="#reviews" class="navbar-link">Reviews</a>
+				<a href="#contact" class="navbar-link">Contact</a>
+				<a href="javascript:void(0)" class="navbar-hamburger" onclick="toggleNavbarMobile()">
+					<i class="fa fa-bars fa-2x"></i>
+				</a>
+			</div>
+		</div>
+		<div id="navbar-mobile">
+			<a href="#features" class="navbar-link-mobile" onclick="toggleNavbarMobile()">Features</a>
+			<a href="#about" class="navbar-link-mobile" onclick="toggleNavbarMobile()">About</a>
+			<a href="#pricing" class="navbar-link-mobile" onclick="toggleNavbarMobile()">Pricing</a>
+			<a href="#reviews" class="navbar-link-mobile" onclick="toggleNavbarMobile()">Reviews</a>
+			<a href="#contact" class="navbar-link-mobile" onclick="toggleNavbarMobile()">Contact</a>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/main.js"></script>
+
+	<!-- Header -->
+	<header>
+		<div id="header-wrapper">
+			<img src="images/header-image.png" id="header-image">
+			<div id="header-content">
+				<div id="header-text">
+					<img src="images/header-logo.png" id="header-logo">
+					<p id="header-description1">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</p>
+					<p id="header-divider"></p>
+					<p id="header-description2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
+					<button type="button" id="header-download" href="/">Download</button>
+				</div>
+				<div id="header-signup">
+					<div id="signup-title-wrapper">
+						<p id="signup-title">Try Your <span class="orange">FREE</span> Trial Today</p>
+					</div>
+					<input type="text" name="signup-name" placeholder="Name">
+					<input type="text" name="signup-email" placeholder="Email">
+					<input type="password" name="signup-password" placeholder="Password">
+					<div id="signup-button" onclick="/">
+						<p id="signup-button-text">Get Started</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Social Media -->
+	<div id="social-media-wrapper">
+		<div id="social-media">
+			<div id="social-media-text">
+				<p id="social-media-title">Social Media</p>
+				<p id="social-media-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+			</div>
+			<div id="social-media-icons">
+				<a href="https://facebook.com">
+					<i class="fa fa-facebook-f"></i>
+				</a>
+				<a href="https://twitter.com">
+					<i class="fa fa-twitter"></i>
+				</a>
+				<a href="https://plus.google.com">
+					<i class="fa fa-google-plus"></i>
+				</a>
+				<a href="https://pinterest.com">
+					<i class="fa fa-pinterest"></i>
+				</a>
+				<a href="https://instagram.com">
+					<i class="fa fa-instagram"></i>
+				</a>
+				<a href="https://stumbleupon.com">
+					<i class="fa fa-stumbleupon"></i>
+				</a>
+				<a href="https://en.wikipedia.org/wiki/RSS">
+					<i class="fa fa-rss"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Features -->
+	<div id="features">
+		<div id="features1">
+			<div id="features-tabs">
+				<div id="feature-tab1" class="feature-tab active" onclick="openTab(1);">Tab 1</div>
+				<div id="feature-tab2" class="feature-tab" onclick="openTab(2);">Tab 2</div>
+				<div id="feature-tab3" class="feature-tab" onclick="openTab(3);">Tab 3</div>
+			</div>
+			<div id="features-contents">
+				<div class="features1-text" style="visibility: visible;">
+					<p class="features1-title">Tab #1 with soft transitioning effect.</p>
+					<p class="features1-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes. <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+					<button type="button" class="feature-download" href="/">Download</button>
+				</div>
+				<div class="features1-text" style="visibility: hidden;">
+					<p class="features1-title">Tab #2 with soft transitioning effect.</p>
+					<p class="features1-description">Fusce convallis tortor augue, vel tristique justo tincidunt id. Maecenas id porttitor risus. Quisque eu molestie felis, id laoreet mi. Sed in interdum lectus. Integer euismod aliquam facilisis. Ut porta cursus egestas. Morbi est nisl, consectetur et feugiat ut, pulvinar sit amet est. Curabitur in ullamcorper tortor. Quisque consectetur odio non augue vehicula, eget rhoncus leo bibendum.</p>
+					<button type="button" class="feature-download" href="/">Download</button>
+				</div>
+				<div class="features1-text" style="visibility: hidden;">
+					<p class="features1-title">Tab #3 with soft transitioning effect.</p>
+					<p class="features1-description">Maecenas eget neque sit amet libero accumsan vehicula. Suspendisse vel pellentesque erat, eu porta libero. Vivamus vulputate aliquam turpis, a tincidunt nisi maximus eget. Quisque hendrerit mauris accumsan ipsum vehicula, ac aliquam nibh suscipit. Integer posuere tortor at lectus consequat volutpat. Aenean dictum pharetra porttitor. Morbi ultrices mauris velit, sit amet bibendum dui dapibus at. Aenean tristique placerat rhoncus. Donec nec placerat augue.</p>
+					<button type="button" class="feature-download" href="/">Download</button>
+				</div>		
+			</div>
+			<div id="features1-image">
+				<img src="images/features-image1.png" id="features-image1">
+			</div>
+		</div>
+		<div id="features2">
+			<div id="features2-image">
+				<img src="images/features-image2.png" id="features-image2">
+			</div>
+			<div id="features2-text">
+				<p id="features2-title">Sub list section</p>
+				<p id="features2-divider"></p>
+				<p id="features2-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
+				<ul>
+					<li>
+						<div class="features2-list-container">
+							<i class="fa fa-cloud-upload"></i>
+							<div>
+								<p class="features2-list-title">Title</p>
+								<p class="features2-list-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="features2-list-container">
+							<i class="fa fa-cloud-download"></i>
+							<div>
+								<p class="features2-list-title">Title</p>
+								<p class="features2-list-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="features3">
+			<div id="features3-text">
+				<p id="features3-title">Standard Picture Section</p>
+				<p id="features3-divider"></p>
+				<p id="features3-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+			</div>
+			<div id="features3-image">
+				<img src="images/features-image3.png" id="features-image3">
+			</div>
+		</div>
+	</div>
+
+	<!-- About -->
+	<div id="about">
+		<div id="about-1">
+			<p id="about-title">WHY THIS IS AWESOME</p>
+			<p id="about-divider"></p>
+			<p id="about-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+		</div>
+		<div id="about-2">
+			<div class="about-2-container">
+				<i class="fa fa-lightbulb-o"></i>
+				<p class="about-subtitle">Thoughtful Design</p>
+				<p class="about-subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
+			</div>
+			<div class="about-2-container">
+				<i class="fa fa-keyboard-o"></i>
+				<p class="about-subtitle">Well Crafted</p>
+				<p class="about-subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
+			</div>
+			<div class="about-2-container">
+				<i class="fa fa-bolt"></i>
+				<p class="about-subtitle">Easy to Customize</p>
+				<p class="about-subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Pricing -->
+	<div id="pricing">
+		<div id="pricing-1">
+			<p id="pricing-title">PRICING OPTIONS</p>
+			<p id="pricing-divider"></p>
+			<p id="pricing-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+		</div>
+		<div id="pricing-2">
+			<div class="pricing-2-container">
+				<div class="pricing-name-container">
+					<p class="pricing-name">Basic</p>
+				</div>
+				<div class="pricing-price-container">
+					<p class="pricing-price">$<span>0</span></p>
+					<p class="pricing-description">Free for Life</p>
+				</div>
+				<div class="pricing-orange-small"></div>
+				<div class="pricing-detail-container">
+					<p class="pricing-detail">1 GB OF SPACE</p>
+				</div>
+				<div class="pricing-detail-container">
+					<p class="pricing-detail">10 GB OF BANDWIDTH</p>
+				</div>
+				<div class="pricing-detail-container">
+					<p class="pricing-detail">3 WEBSITES</p>
+				</div>
+				<div class="pricing-detail-container">
+					<p class="pricing-detail">BASIC CUSTOMIZATION</p>
+				</div>
+				<div class="pricing-detail-container">
+					<p class="pricing-detail">WORDPRESS INTEGRATION</p>
+				</div>
+				<div class="pricing-detail-container">
+					<p class="pricing-detail">EMAIL SUPPORT</p>
+				</div>
+			</div>
+			<div class="pricing-2-container">
+				<div class="pricing-name-container">
+					<p class="pricing-name">Professional</p>
+				</div>
+				<div class="pricing-price-container">
+					<p class="pricing-price">$<span>19</span></p>
+					<p class="pricing-description">Monthly Payment</p>
+				</div>
+				<div class="pricing-orange-big">
+					<p class="pricing-orange-text">OUR MOST POPULAR</p>
+				</div>
+				<div class="pricing-detail-container">
+					<p class="pricing-detail">5 GB OF SPACE</p>
+				</div>
+				<div class="pricing-detail-container">
+					<p class="pricing-detail">50 GB OF BANDWIDTH</p>
+				</div>
+				<div class="pricing-detail-container">
+					<p class="pricing-detail">12 WEBSITES</p>
+				</div>
+				<div class="pricing-detail-container">
+					<p class="pricing-detail">ADVANCED CUSTOMIZATION</p>
+				</div>
+				<div class="pricing-detail-container">
+					<p class="pricing-detail">WORDPRESS INTEGRATION</p>
+				</div>
+				<div class="pricing-detail-container">
+					<p class="pricing-detail">EMAIL SUPPORT</p>
+				</div>
+			</div>
+			<div class="pricing-2-container">
+				<div class="pricing-name-container">
+					<p class="pricing-name">Enterprise</p>
+				</div>
+				<div class="pricing-price-container">
+					<p class="pricing-price">$<span>70</span></p>
+					<p class="pricing-description">Monthly Payment</p>
+				</div>
+				<div class="pricing-orange-small"></div>
+				<div class="pricing-detail-container">
+					<p class="pricing-detail">UNLIMITED SPACE</p>
+				</div>
+				<div class="pricing-detail-container">
+					<p class="pricing-detail">UNLIMITED BANDWIDTH</p>
+				</div>
+				<div class="pricing-detail-container">
+					<p class="pricing-detail">100 WEBSITES</p>
+				</div>
+				<div class="pricing-detail-container">
+					<p class="pricing-detail">ADVANCED CUSTOMIZATION</p>
+				</div>
+				<div class="pricing-detail-container">
+					<p class="pricing-detail">WORDPRESS INTEGRATION</p>
+				</div>
+				<div class="pricing-detail-container">
+					<p class="pricing-detail">24/7 CUSTOMER SUPPORT</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Reviews -->
+	<div id="reviews">
+		<div id="reviews-1">
+			<p id="reviews-title">WHAT OUR CUSTOMERS ARE SAYING</p>
+			<p id="reviews-divider"></p>
+			<p id="reviews-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+		</div>
+		<div id="reviews-2">
+			<div class="reviews-2-container">
+				<div class="reviews-2-speechbox">
+					<p class="reviews-2-speechtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</p>
+				</div>
+				<div class="reviews-2-customer">
+					<img src="images/reviews-image.png">
+					<div class="reviews-2-name-container">
+						<p class="reviews-2-name">Jeremy H.</p>
+						<p class="reviews-2-job">Manager</p>
+					</div>
+				</div>
+			</div>
+			<div class="reviews-2-container">
+				<div class="reviews-2-speechbox">
+					<p class="reviews-2-speechtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</p>
+				</div>
+				<div class="reviews-2-customer">
+					<img src="images/reviews-image.png">
+					<div class="reviews-2-name-container">
+						<p class="reviews-2-name">John S.</p>
+						<p class="reviews-2-job">Freelancer</p>
+					</div>
+				</div>
+			</div>
+			<div class="reviews-2-container">
+				<div class="reviews-2-speechbox">
+					<p class="reviews-2-speechtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</p>
+				</div>
+				<div class="reviews-2-customer">
+					<img src="images/reviews-image.png">
+					<div class="reviews-2-name-container">
+						<p class="reviews-2-name">Susan W.</p>
+						<p class="reviews-2-job">Photographer</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Download -->
+	<div id="download">
+		<img src="images/download-image.png" id="download-image">
+		<div id="download-container">
+			<p id="download-title">STYLISH AXURE DESIGN</p>
+			<p id="download-divider"></p>
+			<p id="download-description">Use the sections you need, remove the ones you don't. Create gorgeous prototypes faster than ever!</p>
+			<button type="button" id="download-button" href="/">Download</button>
+		</div>
+	</div>
+
+	<!-- Contact Us -->
+	<div id="contact">
+		<div id="contact-1">
+			<p id="contact-title">CONTACT US</p>
+			<p id="contact-divider"></p>
+			<p id="contact-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+		</div>
+		<div id="contact-2">
+			<div id="contact-2-1">
+				<input type="text" name="contact-name" placeholder="Name">
+				<input type="text" name="contact-email" placeholder="Email">
+				<input type="text" name="contact-subject" placeholder="Subject">
+			</div>
+			<div id="contact-2-2">
+				<textarea name="contact-message" placeholder="Message" maxlength="400"></textarea>
+			</div>
+		</div>
+		<button type="button" id="contact-send" href="/">Send Message</button>
+	</div>
+	<footer>
+		<div id="footer-icons">
+				<a href="https://facebook.com">
+					<i class="fa fa-facebook-f"></i>
+				</a>
+				<a href="https://twitter.com">
+					<i class="fa fa-twitter"></i>
+				</a>
+				<a href="https://plus.google.com">
+					<i class="fa fa-google-plus"></i>
+				</a>
+				<a href="https://pinterest.com">
+					<i class="fa fa-pinterest"></i>
+				</a>
+				<a href="https://instagram.com">
+					<i class="fa fa-instagram"></i>
+				</a>
+				<a href="https://stumbleupon.com">
+					<i class="fa fa-stumbleupon"></i>
+				</a>
+				<a href="https://en.wikipedia.org/wiki/RSS">
+					<i class="fa fa-rss"></i>
+				</a>
+			</div>
+			<p id="footer-text">© 2015 Axure Themes</p>
+	</footer>
+</body>
+</html>
