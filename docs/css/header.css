@@ -202,6 +202,7 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  margin-top: 1px;
   transition: 0.2s; }
   #signup-button:hover, #signup-button:active {
     background-color: #FFA653; }

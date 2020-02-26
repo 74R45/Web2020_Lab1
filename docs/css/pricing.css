@@ -12,6 +12,9 @@
   display: flex;
   flex-direction: column;
   align-items: center; }
+  @media (max-width: 599px) {
+    #pricing-1 {
+      width: 90%; } }
 
 #pricing-title {
   font-size: 2.6vw;
@@ -19,18 +22,37 @@
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   margin: 0; }
+  @media (max-width: 799px) {
+    #pricing-title {
+      font-size: 5.2vw; } }
+  @media (max-width: 599px) {
+    #pricing-title {
+      font-size: 7.8vw; } }
 
 #pricing-divider {
   background: #FF8B38;
   width: 4.5vw;
   height: 2px; }
+  @media (max-width: 799px) {
+    #pricing-divider {
+      width: 6.75vw; } }
+  @media (max-width: 599px) {
+    #pricing-divider {
+      width: 12vw; } }
 
 #pricing-text {
   font-size: 1vw;
   color: #86878b;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  margin-top: 0; }
+  margin-top: 0;
+  text-align: center; }
+  @media (max-width: 799px) {
+    #pricing-text {
+      font-size: 2vw; } }
+  @media (max-width: 599px) {
+    #pricing-text {
+      font-size: 3vw; } }
 
 #pricing-2 {
   width: 100%;
@@ -38,6 +60,11 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end; }
+  @media (max-width: 799px) {
+    #pricing-2 {
+      flex-direction: column;
+      align-items: center;
+      margin: 0; } }
 
 .pricing-2-container {
   display: flex;
@@ -45,6 +72,13 @@
   align-items: center;
   background-color: white;
   width: 32%; }
+  @media (max-width: 799px) {
+    .pricing-2-container {
+      width: 64%;
+      margin-top: 3.2vw; } }
+  @media (max-width: 599px) {
+    .pricing-2-container {
+      width: 100%; } }
 
 .pricing-name-container {
   width: 100%;
@@ -54,12 +88,24 @@
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid white; }
+  @media (max-width: 799px) {
+    .pricing-name-container {
+      height: 8.42vw; } }
+  @media (max-width: 599px) {
+    .pricing-name-container {
+      height: 13.16vw; } }
 
 .pricing-name {
   font-size: 1.43vw;
   color: white;
   font-family: "Open Sans", sans-serif;
   font-weight: 700; }
+  @media (max-width: 799px) {
+    .pricing-name {
+      font-size: 2.86vw; } }
+  @media (max-width: 599px) {
+    .pricing-name {
+      font-size: 4.47vw; } }
 
 .pricing-price-container {
   width: 100%;
@@ -69,6 +115,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between; }
+  @media (max-width: 799px) {
+    .pricing-price-container {
+      height: 21.42vw; } }
+  @media (max-width: 599px) {
+    .pricing-price-container {
+      height: 33.47vw; } }
 
 .pricing-price {
   font-size: 2.5vw;
@@ -80,6 +132,20 @@
   .pricing-price span {
     font-size: 7vw;
     text-shadow: 0px 0.1vw, 0.1vw 0px, 0.1vw 0.1vw; }
+    @media (max-width: 799px) {
+      .pricing-price span {
+        font-size: 14vw; } }
+    @media (max-width: 599px) {
+      .pricing-price span {
+        font-size: 21.87vw; } }
+  @media (max-width: 799px) {
+    .pricing-price {
+      font-size: 5vw;
+      margin-top: -1.2vw; } }
+  @media (max-width: 599px) {
+    .pricing-price {
+      font-size: 7.81vw;
+      margin-top: -1.86vw; } }
 
 .pricing-description {
   font-size: 1vw;
@@ -89,11 +155,23 @@
   font-weight: 600;
   font-style: italic;
   margin-top: 0; }
+  @media (max-width: 799px) {
+    .pricing-description {
+      font-size: 2vw; } }
+  @media (max-width: 599px) {
+    .pricing-description {
+      font-size: 3.13vw; } }
 
 .pricing-orange-small {
   width: 100%;
-  height: 5px;
+  height: 0.4vw;
   background-color: #FF8B38; }
+  @media (max-width: 799px) {
+    .pricing-orange-small {
+      height: 0.8vw; } }
+  @media (max-width: 599px) {
+    .pricing-orange-small {
+      height: 1.25vw; } }
 
 .pricing-orange-big {
   width: 100%;
@@ -102,12 +180,24 @@
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media (max-width: 799px) {
+    .pricing-orange-big {
+      height: 5.7vw; } }
+  @media (max-width: 599px) {
+    .pricing-orange-big {
+      height: 8.9vw; } }
 
 .pricing-orange-text {
   font-size: 1vw;
   color: white;
   font-family: "Open Sans", sans-serif;
   font-weight: 700; }
+  @media (max-width: 799px) {
+    .pricing-orange-text {
+      font-size: 2vw; } }
+  @media (max-width: 599px) {
+    .pricing-orange-text {
+      font-size: 3.13vw; } }
 
 .pricing-detail-container {
   width: 100%;
@@ -117,9 +207,22 @@
   justify-content: center;
   align-items: center;
   border-top: 1px solid #F5F5F5; }
+  @media (max-width: 799px) {
+    .pricing-detail-container {
+      height: 5.86vw;
+      border-top: 2px solid #F5F5F5; } }
+  @media (max-width: 599px) {
+    .pricing-detail-container {
+      height: 9.16vw; } }
 
 .pricing-detail {
   font-size: 1vw;
   color: #86878b;
   font-family: "Open Sans", sans-serif;
   font-weight: 400; }
+  @media (max-width: 799px) {
+    .pricing-detail {
+      font-size: 2vw; } }
+  @media (max-width: 599px) {
+    .pricing-detail {
+      font-size: 3.13vw; } }

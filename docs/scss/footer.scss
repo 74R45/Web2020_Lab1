@@ -22,6 +22,19 @@ footer {
 		&:hover, &:active {
 			color: white;
 		}
+		@include tablet-down {
+			margin: 0 2vw;
+		}
+		@include phone-only {
+			margin: 0 3vw;
+		}
+	}
+
+	@include tablet-down {
+		font-size: 3.428vw;
+	}
+	@include phone-only {
+		font-size: 5.142vw;
 	}
 }
 
@@ -32,4 +45,11 @@ footer {
 	font-weight: 400;
 	opacity: 0.5;
 	margin: 0.86vw 0 0 0;
+
+	@include tablet-down {
+		font-size: 1.72vw;
+	}
+	@include phone-only {
+		font-size: 2.58vw;
+	}
 }

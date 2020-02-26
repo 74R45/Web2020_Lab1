@@ -22,12 +22,25 @@
 	font-family: "Raleway", sans-serif;
 	font-weight: 400;
 	margin: 0;
+	@include tablet-down {
+		font-size: 5.2vw;
+	}
+	@include phone-only {
+		font-size: 7.8vw;
+	}
 }
+
 
 #contact-divider {
 	background: #FF8B38;
 	width: 4.5vw;
 	height: 2px;
+	@include tablet-down {
+		width: 6.75vw;
+	}
+	@include phone-only {
+		width: 12vw;
+	}
 }
 
 #contact-description {
@@ -36,6 +49,13 @@
 	font-family: "Open Sans", sans-serif;
 	font-weight: 400;
 	margin-top: 0;
+	text-align: center;
+	@include tablet-down {
+		font-size: 2vw;
+	}
+	@include phone-only {
+		font-size: 3vw;
+	}
 }
 
 #contact-2 {
@@ -55,6 +75,20 @@
 		font-family: "Open Sans", sans-serif;
 		font-weight: 400;
 		outline: 0;
+		@include tablet-down {
+			font-size: 2vw;
+			margin-bottom: 3vw;
+		}
+		@include phone-only {
+			font-size: 3vw;
+		}
+	}
+
+	@include tablet-down {
+		margin-bottom: 1vw;
+		height: 50vw;
+		flex-direction: column;
+		align-items: center;
 	}
 }
 
@@ -63,6 +97,9 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	@include tablet-down {
+		width: 60vw;
+	}
 }
 
 #contact-2-2 {
@@ -72,6 +109,10 @@
 		height: 100%;
 		width: 100%;
 		padding: 0;
+	}
+	@include tablet-down {
+		width: 60vw;
+		height: 100%
 	}
 }
 
@@ -94,4 +135,16 @@
 		background-color: #FFA653;
 	}
 	transition: 0.2s;
+	@include tablet-down {
+		width: 20.86vw;
+		height: 6.28vw;
+		font-size: 2.14vw;
+		border-radius: 0.44vw;
+	}
+	@include phone-only {
+		width: 31.29vw;
+		height: 9.42vw;
+		font-size: 3.21vw;
+		border-radius: 0.66vw;	
+	}
 }

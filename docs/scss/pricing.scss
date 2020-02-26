@@ -15,6 +15,9 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	@include phone-only {
+		width: 90%;
+	}
 }
 
 #pricing-title {
@@ -23,12 +26,24 @@
 	font-family: "Raleway", sans-serif;
 	font-weight: 400;
 	margin: 0;
+	@include tablet-down {
+		font-size: 5.2vw;
+	}
+	@include phone-only {
+		font-size: 7.8vw;
+	}
 }
 
 #pricing-divider {
 	background: #FF8B38;
 	width: 4.5vw;
 	height: 2px;
+	@include tablet-down {
+		width: 6.75vw;
+	}
+	@include phone-only {
+		width: 12vw;
+	}
 }
 
 #pricing-text {
@@ -37,6 +52,13 @@
 	font-family: "Open Sans", sans-serif;
 	font-weight: 400;
 	margin-top: 0;
+	text-align: center;
+	@include tablet-down {
+		font-size: 2vw;
+	}
+	@include phone-only {
+		font-size: 3vw;
+	}
 }
 
 #pricing-2 {
@@ -45,6 +67,11 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
+	@include tablet-down {
+		flex-direction: column;
+		align-items: center;
+		margin: 0;
+	}
 }
 
 .pricing-2-container {
@@ -53,7 +80,15 @@
 	align-items: center;
 	background-color: white;
 	width: 32%;
+	@include tablet-down {
+		width: 64%;
+		margin-top: 3.2vw;
+	}
+	@include phone-only {
+		width: 100%;
+	}
 }
+
 
 .pricing-name-container {
 	width: 100%;
@@ -63,6 +98,12 @@
 	align-items: center;
 	justify-content: center;
 	border-bottom: 1px solid white;
+	@include tablet-down {
+		height: 8.42vw;
+	}
+	@include phone-only {
+		height: 13.16vw;
+	}
 }
 
 .pricing-name {
@@ -70,6 +111,12 @@
 	color: white;
 	font-family: "Open Sans", sans-serif;
 	font-weight: 700;
+	@include tablet-down {
+		font-size: 2.86vw;
+	}
+	@include phone-only {
+		font-size: 4.47vw;
+	}
 }
 
 .pricing-price-container{ 
@@ -80,6 +127,12 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
+	@include tablet-down {
+		height: 21.42vw;
+	}
+	@include phone-only {
+		height: 33.47vw;
+	}
 }
 
 .pricing-price {
@@ -93,6 +146,21 @@
 	span {
 		font-size: 7vw;
 		text-shadow: 0px 0.1vw, 0.1vw 0px, 0.1vw 0.1vw;
+		@include tablet-down {
+		font-size: 14vw;
+	}
+	@include phone-only {
+		font-size: 21.87vw;
+	}
+	}
+
+	@include tablet-down {
+		font-size: 5vw;
+		margin-top: -1.2vw;
+	}
+	@include phone-only {
+		font-size: 7.81vw;
+		margin-top: -1.86vw;
 	}
 }
 
@@ -104,12 +172,24 @@
 	font-weight: 600;
 	font-style: italic;
 	margin-top: 0;
+	@include tablet-down {
+		font-size: 2vw;
+	}
+	@include phone-only {
+		font-size: 3.13vw;
+	}
 }
 
 .pricing-orange-small {
 	width: 100%;
-	height: 5px;
+	height: 0.4vw;
 	background-color: #FF8B38;
+	@include tablet-down {
+		height: 0.8vw;
+	}
+	@include phone-only {
+		height: 1.25vw;
+	}
 }
 
 .pricing-orange-big {
@@ -119,6 +199,12 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	@include tablet-down {
+		height: 5.7vw;
+	}
+	@include phone-only {
+		height: 8.9vw;
+	}
 }
 
 .pricing-orange-text {
@@ -126,6 +212,12 @@
 	color: white;
 	font-family: "Open Sans", sans-serif;
 	font-weight: 700;
+	@include tablet-down {
+		font-size: 2vw;
+	}
+	@include phone-only {
+		font-size: 3.13vw;
+	}
 }
 
 .pricing-detail-container {
@@ -136,6 +228,13 @@
 	justify-content: center;
 	align-items: center;
 	border-top: 1px solid #F5F5F5;
+	@include tablet-down {
+		height: 5.86vw;
+		border-top: 2px solid #F5F5F5;
+	}
+	@include phone-only {
+		height: 9.16vw;
+	}
 }
 
 .pricing-detail {
@@ -143,4 +242,10 @@
 	color: #86878b;
 	font-family: "Open Sans", sans-serif;
 	font-weight: 400;
+	@include tablet-down {
+		font-size: 2vw;
+	}
+	@include phone-only {
+		font-size: 3.13vw;
+	}
 }

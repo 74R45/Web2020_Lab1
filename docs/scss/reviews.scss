@@ -22,12 +22,25 @@
 	font-family: "Raleway", sans-serif;
 	font-weight: 400;
 	margin: 0;
+	text-align: center;
+	@include tablet-down {
+		font-size: 5.2vw;
+	}
+	@include phone-only {
+		font-size: 7.8vw;
+	}
 }
 
 #reviews-divider {
 	background: #FF8B38;
 	width: 4.5vw;
 	height: 2px;
+	@include tablet-down {
+		width: 6.75vw;
+	}
+	@include phone-only {
+		width: 12vw;
+	}
 }
 
 #reviews-description {
@@ -36,12 +49,25 @@
 	font-family: "Open Sans", sans-serif;
 	font-weight: 400;
 	margin-top: 0;
+	text-align: center;
+	@include tablet-down {
+		font-size: 2vw;
+		margin-bottom: 0;
+	}
+	@include phone-only {
+		font-size: 3vw;
+	}
 }
 
 #reviews-2 {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 3.2vw;
+	@include tablet-down {
+		flex-direction: column;
+		align-items: center;
+		margin: 0;
+	}
 }
 
 .reviews-2-container {
@@ -49,6 +75,13 @@
 	flex-direction: column;
 	align-items: flex-start;
 	max-width: 26%;
+	@include tablet-down {
+		max-width: 52%;
+		margin-top: 5vw;
+	}
+	@include phone-only {
+		max-width: 78%;
+	}
 }
 
 .reviews-2-speechbox {
@@ -69,6 +102,25 @@
 		left: 0;
 		margin-left: 1.35vw;
 
+		@include tablet-down {
+			bottom: -2vw;
+			border-width: 4vw 2.4vw 0 2.4vw;
+			margin-left: 2.7vw;
+		}
+		@include phone-only {
+			bottom: -3vw;
+			border-width: 6vw 3.6vw 0 3.6vw;
+			margin-left: 4.05vw;
+		}
+	}
+	
+	@include tablet-down {
+		border-radius: 0.44vw;
+		padding: 1vw 2vw;
+	}
+	@include phone-only {
+		border-radius: 0.66vw;
+		padding: 1.5vw 3vw;
 	}
 }
 
@@ -78,6 +130,12 @@
 	font-family: "Open Sans", sans-serif;
 	font-weight: 400;
 	font-style: italic;
+	@include tablet-down {
+		font-size: 2vw;
+	}
+	@include phone-only {
+		font-size: 3vw;
+	}
 }
 
 .reviews-2-customer {
@@ -88,6 +146,20 @@
 
 	img {
 		width: 5vw;
+
+		@include tablet-down {
+			width: 10vw;
+		}
+		@include phone-only {
+			width: 15vw;
+		}
+	}
+
+	@include tablet-down {
+		margin-top: 3vw;
+	}
+	@include phone-only {
+		margin-top: 4.5vw;
 	}
 }
 
@@ -97,6 +169,14 @@
 	flex-direction: column;
 	justify-content: center;
 	margin-left: 1vw;
+	@include tablet-down {
+		height: 10vw;
+		margin-left: 2vw;
+	}
+	@include phone-only {
+		height: 15vw;
+		margin-left: 3vw;
+	}
 }
 
 .reviews-2-name {
@@ -106,6 +186,14 @@
 	font-weight: 700;
 	margin: 0;
 	margin-bottom: 0.1vw;
+	@include tablet-down {
+		font-size: 2.86vw;
+		margin-bottom: 0.2vw;
+	}
+	@include phone-only {
+		font-size: 4.3vw;
+		margin-bottom: 0.3vw;
+	}
 }
 
 .reviews-2-job {
@@ -114,4 +202,10 @@
 	font-family: "Open Sans", sans-serif;
 	font-weight: 400;
 	margin: 0;
+	@include tablet-down {
+		font-size: 2vw;
+	}
+	@include phone-only {
+		font-size: 3vw;
+	}
 }

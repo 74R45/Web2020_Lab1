@@ -188,7 +188,6 @@
 	height: auto;
 	@include tablet-down {
 		width: 60vw;
-		height: auto;
 	}
 }
 
@@ -196,18 +195,29 @@
 	padding: 7.86vw 10vw 7.14vw 10vw;
 	display: flex;
 	justify-content: space-between;
+	@include tablet-down {
+		flex-direction: column;
+	}
 }
 
 #features2-image {
 	width: 45%;
 	display: flex;
 	align-items: center;
+	@include tablet-down {
+		width: 60vw;
+		margin: 0 auto;
+	}
 }
 
 #features-image2 {
 	margin-left: -1.5vw;
 	width: 100%;
 	height: auto;
+	@include tablet-down {
+		width: 100%;
+		margin: 0;
+	}
 }
 
 #features2-text {
@@ -229,6 +239,31 @@
 			padding: 0.643vw;
 			margin-top: 1.05vw;
 			margin-right: 1.75vw;
+
+			&:hover, &:active {
+				color: #FFC673;
+			}
+			transition: 0.2s;
+		}
+	}
+	@include tablet-down {
+		width: 80vw;
+
+		ul i {
+			border-radius: 8.6vw;
+			border: 0.286vw solid #FF8B38;
+			padding: 1.286vw;
+			margin-top: 2.1vw;
+			margin-right: 3.5vw;
+		}
+	}
+	@include phone-only {
+		ul i {
+			border-radius: 12.9vw;
+			border: 0.43vw solid #FF8B38;
+			padding: 1.93vw;
+			margin-top: 3.15vw;
+			margin-right: 5.25vw;
 		}
 	}
 }
@@ -239,6 +274,14 @@
 	font-family: "Open Sans", sans-serif;
 	font-weight: 700;
 	margin: 0.72vw 0;
+	@include tablet-down {
+		font-size: 2.86vw;
+		margin: 1.44vw 0;
+	}
+	@include phone-only {
+		font-size: 4.3vw;
+		margin: 2.16vw 0;
+	}
 }
 
 #features2-divider {
@@ -246,6 +289,12 @@
 	width: 4.5vw;
 	height: 2px;
 	margin: 0.72vw 0;
+	@include tablet-down {
+		width: 6.75vw;
+	}
+	@include phone-only {
+		width: 12vw;
+	}
 }
 
 #features2-description {
@@ -254,6 +303,14 @@
 	font-family: "Open Sans", sans-serif;
 	font-weight: 400;
 	margin: 0.72vw 0;
+	@include tablet-down {
+		font-size: 2vw;
+		margin: 1.44vw 0;
+	}
+	@include phone-only {
+		font-size: 3vw;
+		margin: 2.16vw 0;
+	}
 }
 
 .features2-list-container {
@@ -266,6 +323,12 @@
 	color: #212121;
 	font-family: "Open Sans", sans-serif;
 	font-weight: 600;
+	@include tablet-down {
+		font-size: 2vw;
+	}
+	@include phone-only {
+		font-size: 3vw;
+	}
 }
 
 .features2-list-text {
@@ -273,6 +336,12 @@
 	color: #86878b;
 	font-family: "Open Sans", sans-serif;
 	font-weight: 400;
+	@include tablet-down {
+		font-size: 2vw;
+	}
+	@include phone-only {
+		font-size: 3vw;
+	}
 }
 
 #features3 {
@@ -280,6 +349,9 @@
 	display: flex;
 	justify-content: space-between;
 	background-color: #F5F5F5;
+	@include tablet-down {
+		flex-direction: column;
+	}
 }
 
 #features3-text {
@@ -288,6 +360,9 @@
 	flex-direction: column;
 	align-items: flex-start;
 	padding-top: 1vw;
+	@include tablet-down {
+		width: 80vw;
+	}
 }
 
 #features3-title {
@@ -296,6 +371,14 @@
 	font-family: "Open Sans", sans-serif;
 	font-weight: 700;
 	margin: 0.72vw 0;
+	@include tablet-down {
+		font-size: 2.86vw;
+		margin: 1.44vw 0;
+	}
+	@include phone-only {
+		font-size: 4.3vw;
+		margin: 2.16vw 0;
+	}
 }
 
 #features3-divider {
@@ -303,6 +386,12 @@
 	width: 4.5vw;
 	height: 2px;
 	margin: 0.72vw 0;
+	@include tablet-down {
+		width: 6.75vw;
+	}
+	@include phone-only {
+		width: 12vw;
+	}
 }
 
 #features3-description {
@@ -311,10 +400,23 @@
 	font-family: "Open Sans", sans-serif;
 	font-weight: 400;
 	margin: 0.72vw 0;
+	@include tablet-down {
+		font-size: 2vw;
+		margin: 1.44vw 0;
+	}
+	@include phone-only {
+		font-size: 3vw;
+		margin: 2.16vw 0;
+	}
 }
 
 #features3-image {
 	width: 45%;
+	@include tablet-down {
+		order: -1;
+		width: 60vw;
+		margin: 0 auto;
+	}
 }
 
 #features-image3 {

@@ -18,18 +18,37 @@
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   margin: 0; }
+  @media (max-width: 799px) {
+    #contact-title {
+      font-size: 5.2vw; } }
+  @media (max-width: 599px) {
+    #contact-title {
+      font-size: 7.8vw; } }
 
 #contact-divider {
   background: #FF8B38;
   width: 4.5vw;
   height: 2px; }
+  @media (max-width: 799px) {
+    #contact-divider {
+      width: 6.75vw; } }
+  @media (max-width: 599px) {
+    #contact-divider {
+      width: 12vw; } }
 
 #contact-description {
   font-size: 1vw;
   color: #86878b;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  margin-top: 0; }
+  margin-top: 0;
+  text-align: center; }
+  @media (max-width: 799px) {
+    #contact-description {
+      font-size: 2vw; } }
+  @media (max-width: 599px) {
+    #contact-description {
+      font-size: 3vw; } }
 
 #contact-2 {
   margin-top: 5vw;
@@ -46,12 +65,28 @@
     outline: 0; }
     #contact-2 input::placeholder, #contact-2 textarea::placeholder {
       color: #BDBDBD; }
+    @media (max-width: 799px) {
+      #contact-2 input, #contact-2 textarea {
+        font-size: 2vw;
+        margin-bottom: 3vw; } }
+    @media (max-width: 599px) {
+      #contact-2 input, #contact-2 textarea {
+        font-size: 3vw; } }
+  @media (max-width: 799px) {
+    #contact-2 {
+      margin-bottom: 1vw;
+      height: 50vw;
+      flex-direction: column;
+      align-items: center; } }
 
 #contact-2-1 {
   width: 35vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
+  @media (max-width: 799px) {
+    #contact-2-1 {
+      width: 60vw; } }
 
 #contact-2-2 {
   width: 35vw; }
@@ -60,6 +95,10 @@
     height: 100%;
     width: 100%;
     padding: 0; }
+  @media (max-width: 799px) {
+    #contact-2-2 {
+      width: 60vw;
+      height: 100%; } }
 
 #contact-send {
   width: 10.43vw;
@@ -78,3 +117,15 @@
   transition: 0.2s; }
   #contact-send:hover, #contact-send:active {
     background-color: #FFA653; }
+  @media (max-width: 799px) {
+    #contact-send {
+      width: 20.86vw;
+      height: 6.28vw;
+      font-size: 2.14vw;
+      border-radius: 0.44vw; } }
+  @media (max-width: 599px) {
+    #contact-send {
+      width: 31.29vw;
+      height: 9.42vw;
+      font-size: 3.21vw;
+      border-radius: 0.66vw; } }

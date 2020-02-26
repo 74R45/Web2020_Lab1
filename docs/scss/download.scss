@@ -11,6 +11,12 @@
 	background: black;
 	height: 22.86vw;
 	overflow: hidden;
+	@include tablet-down {
+		height: 45.72vw;
+	}
+	@include phone-only {
+		height: 100vw;
+	}
 }
 
 #download-image {
@@ -27,6 +33,14 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
+	@include tablet-down {
+		padding: 7vw 10vw 9.5vw 10vw;
+		height: 29vw;
+	}
+	@include phone-only {
+		padding: 22vw 10vw 23vw 10vw;
+		height: 55vw;
+	}
 }
 
 #download-title {
@@ -35,13 +49,25 @@
 	font-family: "Raleway", sans-serif;
 	font-weight: 400;
 	margin: 0;
+	text-align: center;
+	@include tablet-down {
+		font-size: 5.2vw;
+	}
+	@include phone-only {
+		font-size: 7.8vw;
+	}
 }
 
 #download-divider {
 	background: white;
 	width: 4.5vw;
-	min-height: 1px;
-	height: 2px;
+	min-height: 2px;
+	@include tablet-down {
+		width: 6.75vw;
+	}
+	@include phone-only {
+		width: 12vw;
+	}
 }
 
 #download-description {
@@ -51,6 +77,13 @@
 	font-weight: 300;
 	margin-top: 0;
 	opacity: 0.8;
+	text-align: center;
+	@include tablet-down {
+		font-size: 2.28vw;
+	}
+	@include phone-only {
+		font-size: 3.42vw;
+	}
 }
 
 #download-button {
@@ -68,4 +101,15 @@
 		background-color: #FF8B38;
 	}
 	transition: 0.2s;
+
+	@include tablet-down {
+		width: 19.42vw;
+		height: 6vw;
+		font-size: 2.14vw
+	}
+	@include phone-only {
+		width: 29.13vw;
+		height: 9vw;
+		font-size: 3.21vw
+	}
 }

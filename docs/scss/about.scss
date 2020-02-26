@@ -22,12 +22,25 @@
 	font-family: "Raleway", sans-serif;
 	font-weight: 400;
 	margin: 0;
+	text-align: center;
+	@include tablet-down {
+		font-size: 5.2vw;
+	}
+	@include phone-only {
+		font-size: 7.8vw;
+	}
 }
 
 #about-divider {
 	background: #FF8B38;
 	width: 4.5vw;
 	height: 2px;
+	@include tablet-down {
+		width: 6.75vw;
+	}
+	@include phone-only {
+		width: 12vw;
+	}
 }
 
 #about-description {
@@ -36,12 +49,24 @@
 	font-family: "Open Sans", sans-serif;
 	font-weight: 400;
 	margin-top: 0;
+	text-align: center;
+	@include tablet-down {
+		font-size: 2vw;
+	}
+	@include phone-only {
+		font-size: 3vw;
+	}
 }
 
 #about-2 {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 3.2vw;
+	@include tablet-down {
+		flex-direction: column;
+		align-items: center;
+		margin: 0;
+	}
 }
 
 .about-2-container {
@@ -59,6 +84,29 @@
 		border: 0.15vw solid #FF8B38;
 		padding: 0.86vw;
 		text-align: center;
+
+		@include tablet-down {
+			width: 3.56vw;
+			font-size: 3.56vw;
+			border-radius: 8.5vw;
+			border: 0.3vw solid #FF8B38;
+			padding: 1.72vw;
+		}
+		@include phone-only {
+			width: 5.9vw;
+			font-size: 5.9vw;
+			border-radius: 14vw;
+			border: 0.5vw solid #FF8B38;
+			padding: 2.84vw;	
+		}
+	}
+
+	@include tablet-down {
+		max-width: 60%;
+		margin-top: 3.2vw;
+	}
+	@include phone-only {
+		max-width: 100%;
 	}
 }
 
@@ -67,6 +115,13 @@
 	color: #333333;
 	font-family: "Open Sans", sans-serif;
 	font-weight: 700;
+	@include tablet-down {
+		font-size: 2.86vw;
+		margin-bottom: 0;
+	}
+	@include phone-only {
+		font-size: 4.72vw;
+	}
 }
 
 .about-subtext {
@@ -75,4 +130,10 @@
 	font-family: "Open Sans", sans-serif;
 	font-weight: 400;
 	text-align: center;
+	@include tablet-down {
+		font-size: 2vw;
+	}
+	@include phone-only {
+		font-size: 3.3vw;
+	}
 }

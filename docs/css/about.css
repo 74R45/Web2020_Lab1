@@ -17,24 +17,49 @@
   color: #212121;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
-  margin: 0; }
+  margin: 0;
+  text-align: center; }
+  @media (max-width: 799px) {
+    #about-title {
+      font-size: 5.2vw; } }
+  @media (max-width: 599px) {
+    #about-title {
+      font-size: 7.8vw; } }
 
 #about-divider {
   background: #FF8B38;
   width: 4.5vw;
   height: 2px; }
+  @media (max-width: 799px) {
+    #about-divider {
+      width: 6.75vw; } }
+  @media (max-width: 599px) {
+    #about-divider {
+      width: 12vw; } }
 
 #about-description {
   font-size: 1vw;
   color: #86878b;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  margin-top: 0; }
+  margin-top: 0;
+  text-align: center; }
+  @media (max-width: 799px) {
+    #about-description {
+      font-size: 2vw; } }
+  @media (max-width: 599px) {
+    #about-description {
+      font-size: 3vw; } }
 
 #about-2 {
   display: flex;
   justify-content: space-between;
   margin-top: 3.2vw; }
+  @media (max-width: 799px) {
+    #about-2 {
+      flex-direction: column;
+      align-items: center;
+      margin: 0; } }
 
 .about-2-container {
   display: flex;
@@ -50,12 +75,40 @@
     border: 0.15vw solid #FF8B38;
     padding: 0.86vw;
     text-align: center; }
+    @media (max-width: 799px) {
+      .about-2-container i {
+        width: 3.56vw;
+        font-size: 3.56vw;
+        border-radius: 8.5vw;
+        border: 0.3vw solid #FF8B38;
+        padding: 1.72vw; } }
+    @media (max-width: 599px) {
+      .about-2-container i {
+        width: 5.9vw;
+        font-size: 5.9vw;
+        border-radius: 14vw;
+        border: 0.5vw solid #FF8B38;
+        padding: 2.84vw; } }
+  @media (max-width: 799px) {
+    .about-2-container {
+      max-width: 60%;
+      margin-top: 3.2vw; } }
+  @media (max-width: 599px) {
+    .about-2-container {
+      max-width: 100%; } }
 
 .about-subtitle {
   font-size: 1.43vw;
   color: #333333;
   font-family: "Open Sans", sans-serif;
   font-weight: 700; }
+  @media (max-width: 799px) {
+    .about-subtitle {
+      font-size: 2.86vw;
+      margin-bottom: 0; } }
+  @media (max-width: 599px) {
+    .about-subtitle {
+      font-size: 4.72vw; } }
 
 .about-subtext {
   font-size: 1vw;
@@ -63,3 +116,9 @@
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   text-align: center; }
+  @media (max-width: 799px) {
+    .about-subtext {
+      font-size: 2vw; } }
+  @media (max-width: 599px) {
+    .about-subtext {
+      font-size: 3.3vw; } }
