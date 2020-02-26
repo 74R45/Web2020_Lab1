@@ -6,6 +6,23 @@
 	display: flex;
 	justify-content: space-between;
 	background-color: #F5F5F5;
+
+	@include tablet-down {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+#features-tabs-wrapper {
+	display: flex;
+	@include tablet-down {
+		margin-top: 5vw;
+		width: 80vw;
+	}
+}
+
+#features-tabs {
+	margin-right: 6vw;
 }
 
 .feature-tab {
@@ -29,20 +46,44 @@
 		background-color: #FF8B38;
 	}
 	transition: 0.2s;
+
+	@include tablet-down {
+		width: 16vw;
+		height: 16vw;
+		font-size: 2vw;
+	}
+	@include phone-only {
+		font-size: 3vw;
+	}
 }
 
 #feature-tab1 {
 	border-radius: 0.36vw 0.36vw 0 0;
+	@include tablet-down {
+		border-radius: 0.72vw 0.72vw 0 0;	}
+	@include phone-only {
+		border-radius: 1vw 1vw 0 0;
+	}
 }
 
 #feature-tab2 {
 	border-top: 1px #F5F5F5 solid;
 	border-bottom: 1px #F5F5F5 solid;
+	@include phone-only {
+		border-top: 2px #F5F5F5 solid;
+		border-bottom: 2px #F5F5F5 solid;
+	}
 }
 
 #feature-tab3 {
 	border-radius: 0 0 0.36vw 0.36vw;
 	filter: drop-shadow(0px 1px 0px rgba(0, 0, 0, 0.2));
+	@include tablet-down {
+		border-radius: 0 0 0.72vw 0.72vw;
+	}
+	@include phone-only {
+		border-radius: 0 0 1vw 1vw;
+	}
 }
 
 #features-contents {
@@ -50,6 +91,13 @@
 	display: flex;
 	align-items: flex-start;
 	padding-top: 0.3vw;
+	@include tablet-down {
+		padding-top: 0.6vw;
+	}
+	@include phone-only {
+		padding-top: 1vw;
+		height: 65vw;
+	}
 }
 
 .features1-text {
@@ -61,6 +109,9 @@
 	flex-direction: column;
 	justify-content: space-between;	
 	align-items: flex-start;
+	@include tablet-down {
+		width: 60vw;
+	}
 }
 
 .features1-title {
@@ -69,6 +120,12 @@
 	font-family: "Open Sans", sans-serif;
 	font-weight: 700;
 	margin-top: 0;
+	@include tablet-down {
+		font-size: 3vw;
+	}
+	@include phone-only {
+		font-size: 4vw;
+	}
 }
 
 .features1-description {
@@ -76,6 +133,12 @@
 	color: #86878b;
 	font-family: "Open Sans", sans-serif;
 	font-weight: 400;
+	@include tablet-down {
+		font-size: 2vw;
+	}
+	@include phone-only {
+		font-size: 2.5vw;
+	}
 }
 
 .feature-download {
@@ -97,16 +160,36 @@
 		background-color: #FFA653;
 	}
 	transition: 0.2s;
+
+	@include tablet-down {
+		width: 17vw;
+		height: 6.28vw;
+		font-size: 2vw;
+		border-radius: 0.5vw;
+	}
+	@include phone-only {
+		width: 25.5vw;
+		height: 9.42vw;
+		font-size: 3vw;
+		border-radius: 0.7vw;
+	}
 }
 
 #features1-image {
 	display: flex;
 	align-items: center;
+	@include tablet-down {
+		order: -1;
+	}
 }
 
 #features-image1 {
 	width: 22.86vw;
 	height: auto;
+	@include tablet-down {
+		width: 60vw;
+		height: auto;
+	}
 }
 
 #features2 {

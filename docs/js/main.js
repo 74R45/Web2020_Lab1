@@ -30,7 +30,7 @@ function openTab(n) {
 				contents[i].style.visibility = 'visible';
 				contents[i].style.opacity = '1';
 			}, 150);
-		} else if (contents[i].style.visibility == 'visible') {
+		} else if (i + 1 != n && contents[i].style.visibility == 'visible') {
 			contents[i].style.opacity = '0';
 			setTimeout(function() {
 				contents[i].style.visibility = 'hidden';

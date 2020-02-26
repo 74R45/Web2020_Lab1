@@ -150,7 +150,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
-	z-index: 2;
+	z-index: 1;
 
 	@include tablet-down {
 		width: 60vw;
@@ -266,16 +266,18 @@
 
 #social-media {
 	width: 80%;
-	height: 7.5vw;
-	padding: 0 10vw;
+	padding: 1.38vw 10vw;
 	background-color: white;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 
 	@include tablet-down {
+		flex-direction: column;
 	}
 	@include phone-only {
+		padding-top: 3vw;
+		padding-bottom: 3vw;
 	}
 }
 
@@ -284,6 +286,13 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	@include tablet-down {
+		width: 50vw;
+		margin-bottom: 3vw;
+	}
+	@include phone-only {
+		width: 80vw;
+	}
 }
 
 #social-media-title {
@@ -293,6 +302,15 @@
 	font-weight: 700;
 	margin: 0;
 	margin-bottom: 0.25vw;
+	
+	@include tablet-down {
+		text-align: center;
+		font-size: 3.84vw;
+		margin-bottom: 0.5vw;
+	}
+	@include phone-only {
+		font-size: 5vw;
+	}
 }
 
 #social-media-description {
@@ -301,6 +319,14 @@
 	font-family: "Open Sans", sans-serif;
 	font-weight: 400;
 	margin: 0;
+	
+	@include tablet-down {
+		text-align: center;
+		font-size: 2vw;
+	}
+	@include phone-only {
+		font-size: 3vw;
+	}
 }
 
 #social-media-icons {
@@ -315,5 +341,10 @@
 		&:hover, &:active {
 			color: #999999;
 		}
+	}
+
+	@include tablet-down {
+		width: 80vw;
+		font-size: 8vw;
 	}
 }
