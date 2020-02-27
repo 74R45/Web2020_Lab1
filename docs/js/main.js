@@ -39,9 +39,10 @@ function openTab(n) {
 	}
 }
 
-// document.onclick = function(e) {
-// 	navbarMob = document.getElementById("navbar-mobile");
-// 	if (navbarMob.style.height != "0px" && e.target.closest(navbarMob).length == 0) {
-// 		navbarMob.style.height = "0px";
-// 	}
-// }
+document.onclick = function(e) {
+	navbarMob = document.getElementById("navbar-mobile");
+	menuButton = document.getElementsByClassName("navbar-hamburger")[0];
+	if (navbarMob.style.height != "0px" && !navbarMob.contains(e.target) && !menuButton.contains(e.target)) {
+		navbarMob.style.height = "0px";
+	}
+}

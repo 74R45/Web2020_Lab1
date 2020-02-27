@@ -274,11 +274,11 @@
 	justify-content: space-between;
 
 	@include tablet-down {
+		padding: 2.8vw 10vw;
 		flex-direction: column;
 	}
 	@include phone-only {
-		padding-top: 3vw;
-		padding-bottom: 3vw;
+		padding: 4.2vw 10vw;
 	}
 }
 

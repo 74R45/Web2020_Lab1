@@ -29,6 +29,10 @@
   display: flex;
   justify-content: space-between; }
 
+#navbar-logo-wrapper {
+  text-decoration: none;
+  height: 27px; }
+
 #navbar-logo {
   height: 27px; }
 
@@ -319,11 +323,11 @@ a[class|="navbar-link"], .navbar-hamburger {
   justify-content: space-between; }
   @media (max-width: 799px) {
     #social-media {
+      padding: 2.8vw 10vw;
       flex-direction: column; } }
   @media (max-width: 599px) {
     #social-media {
-      padding-top: 3vw;
-      padding-bottom: 3vw; } }
+      padding: 4.2vw 10vw; } }
 
 #social-media-text {
   width: 26vw;
@@ -1533,6 +1537,12 @@ footer {
   align-items: center;
   flex-direction: column;
   justify-content: space-between; }
+  @media (max-width: 799px) {
+    footer {
+      padding: 2.5vw 0 2vw 0; } }
+  @media (max-width: 599px) {
+    footer {
+      padding: 3.3vw 0 3vw 0; } }
 
 #footer-icons {
   font-size: 1.714vw;

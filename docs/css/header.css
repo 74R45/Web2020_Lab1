@@ -239,11 +239,11 @@
   justify-content: space-between; }
   @media (max-width: 799px) {
     #social-media {
+      padding: 2.8vw 10vw;
       flex-direction: column; } }
   @media (max-width: 599px) {
     #social-media {
-      padding-top: 3vw;
-      padding-bottom: 3vw; } }
+      padding: 4.2vw 10vw; } }
 
 #social-media-text {
   width: 26vw;
